@@ -1,0 +1,44 @@
+{
+    "name": "imgbuilderarm",
+    "type": "Microsoft.VirtualMachineImages",
+    "apiVersion": "2018-02-01-preview",
+    "location": "westcentralus",
+    "dependsOn": [],
+    "properties": {
+        "build": {
+            "sourceType": "PlatformImage",
+            "platformImageProperties": {
+                "publisher": "Canonical",
+                "offer": "UbuntuServer",
+                "sku": "18.04-LTS",
+                "version": "18.04.201808140"
+            }
+        },
+        "customize": [
+            {
+                "type": "shell",
+                "name": "export script",
+                "script": ""
+              },
+              {
+                "type": "shell",
+                "name": "update system software",
+                "script": ""
+              }
+        ],
+        "distribute": {
+            "targets": [
+                {
+                    "type": "managedImage",
+                    "resourceGroupName": "",
+                    "location": "westcentralus",
+                    "imageName": "",
+                    "tags": {
+                        "source": "imgbuilder",
+                        "baseosimg": "ubuntu1804"
+                    }
+                }
+            ]
+        }
+    }
+}
