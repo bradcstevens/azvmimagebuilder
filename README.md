@@ -12,3 +12,13 @@ Format:
 e.g.
 rhel73_iso_1customize_sigmdi
 ubuntu1804_mp_1customize_mdi
+
+## How to deploy the templates using ARM
+```bash
+az resource create --resource-group <rgname> --properties @/.../templateName.json --is-full-object --resource-type Microsoft.VirtualMachineImages/imageTemplates -n <templateName> --debug
+```
+
+### How to create image artifact
+```bash
+az resource invoke-action --resource-group <rgname> --resource-type  Microsoft.VirtualMachineImages/imageTemplates -n <templateName> --action Run --debug
+```
