@@ -4,40 +4,32 @@
     "location": "westcentralus",
     "dependsOn": [],
     "properties": {
-        "build": {
-            "sourceType": "PlatformImage",
-            "platformImageProperties": {
+        "source": {
+            "type": "PlatformImage",
                 "publisher": "Canonical",
                 "offer": "UbuntuServer",
                 "sku": "18.04-LTS",
                 "version": "18.04.201808140"
-            }
+            
         },
         "customize": [
             {
                 "type": "shell",
-                "name": "export script",
+                "name": "",
                 "script": ""
-              },
-              {
-                "type": "shell",
-                "name": "update system software",
-                "script": ""
-              }
+            }
         ],
-        "distribute": {
-            "targets": [
-                {
-                    "type": "managedImage",
-                    "resourceGroupName": "",
+        "distribute": 
+            [
+                {   "type":"managedImage",
+                    "imageId": "",
                     "location": "westcentralus",
-                    "imageName": "",
+                    "runOutputName": "",
                     "tags": {
-                        "source": "imgbuilder",
+                        "source": "goimagebuilderarm",
                         "baseosimg": "ubuntu1804"
                     }
                 }
             ]
         }
     }
-}
