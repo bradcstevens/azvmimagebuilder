@@ -63,9 +63,11 @@
         "dependsOn": [],
         "properties": {
               "source": {
-                "type": "ISO",
-                    "sourceURI": "[parameters('sourceURI')]",
-                    "sha256Checksum": "[parameters('sha256Checksum')]"
+                "type": "PlatformImage",
+                "publisher": "[parameters('publisher')]",
+                "offer": "[parameters('offer')]",
+                "sku": "[parameters('sku')]",
+                "version": "[parameters('version')]"
                 
             },
             "customize": [
