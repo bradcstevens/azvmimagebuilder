@@ -28,7 +28,20 @@
                         "source": "goimagebuilderarm",
                         "baseosimg": "rhel73"
                     }
-                }
+                },
+                {
+                    "type": "sharedImage",
+                    "galleryImageId": "",
+                    "runOutputName": "",
+                    "tags": {
+                        "source": "goimagebuilderarm",
+                        "baseosimg": "rhel73sept18sigmdi"
+                    },
+                    "replicationRegions": [
+                      "westcentralus",
+                      "centralus"
+                    ]
+                  }
             ]
         }
     }

@@ -29,7 +29,7 @@
         "customizescriptpath": {
           "type": "string"
         },
-        "destinationresgroupid": {
+        "galleryImageId": {
           "type": "string"
         },
         "imagename": {
@@ -41,7 +41,7 @@
     },
     
     "variables": {
-      "resourceid": "[concat(parameters('destinationresgroupid'),parameters('imagename'))]"
+      "resourceid": "[concat(parameters('galleryImageId'),parameters('imagename'))]"
     },
 
 
@@ -70,18 +70,22 @@
             ],
             "distribute": 
                 [
-                    {   "type":"managedImage",
-                        "imageId": "[variables('resourceid')]",
-                        "location": "[parameters('destinationregion')]",
-                        "runOutputName": "[parameters('imagename')]",
-                        "tags": {
-                            "source": "goimagebuilderarm",
-                            "baseosimg": "ubuntu1804"
-                        }
-                    }
+                  {
+                    "type": "sharedImage",
+                    "galleryImageId": "[variables('resourceid')]",
+                    "runOutputName": "[parameters('imagename')]",
+                    "tags": {
+                        "source": "goimagebuilderarm",
+                        "baseosimg": "rhel73sept18"
+                    },
+                    "replicationRegions": [
+                      "westcentralus",
+                      "centralus"
+                    ]
+                  }
                 ]
             }
-        },
+        }
 
     
     ]
