@@ -1,5 +1,5 @@
 # Raw Image Builder Templates
-these are examples of Azure VM Image Builder Template, you can use these when submitting an Image Template directly to the Azure Resource Provider, and they are also good for understanding basic templates.
+These are examples of Azure VM Image Builder Template, you can use these when submitting an Image Template directly to the Azure Resource Provider, and they are also good for understanding basic templates. If you want to see a full example in an Azure Resource Manager Template (ARM), see [here](https://github.com/danielsollondon/azvmimagebuilder/tree/master/armTemplates).
 
 Format:
 '<os_major_minor>_<source>_<number of customizations>_<distribution_target>.json'
