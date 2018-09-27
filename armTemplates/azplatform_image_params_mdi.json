@@ -3,32 +3,43 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "imagetemplatename": {
-        "value": ""
+        "value": "ubuntuIgniteal01"
         },
         "api-version": {
-            "value": ""
+            "value": "2018-02-01-preview"
           },
         "svclocation": {
             "value": "westcentralus"
         },
-        "sourceURI": {
-            "value": "https://.."
-          },
-          "sha256Checksum": {
-            "value": ""
-          },
-
+        "publisher": {
+          "value": "Canonical"
+        },
+        "offer": {
+          "value": "UbuntuServer"
+        },
+        "sku": {
+          "value": "18.04-LTS"
+        },
+        "version": {
+          "value": "18.04.201808140"
+        },
         "customizestepname": {
-          "value": ""
+          "value": "ProdShellScript"
         },
         "customizescriptpath": {
-          "value": ""
+          "value": "https://raw.githubusercontent.com/danielsollondon/azvmimagebuilder/master/testscript.sh"
         },
-        "destinationresgroupid": {
+        "galleryImageId": {
+          "value": "/subscriptions/<subid>/resourceGroups/<rgname>/providers/Microsoft.Compute/galleries/<imggalname>/images/"
+        },
+        "managedImageResGroupId": {
           "value": "/subscriptions/<subid>/resourceGroups/<rgname>/providers/Microsoft.Compute/images/"
         },
-        "imagename": {
-          "value": ""
+        "managedimagename": {
+          "value": "ubuntuignite08"
+        },
+        "sharedgalimagename": {
+          "value": "ubuntu1804"
         },
         "destinationregion": {
           "value": "westcentralus"

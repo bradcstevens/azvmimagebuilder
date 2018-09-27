@@ -74,7 +74,7 @@
                   {
                     "type": "sharedImage",
                     "galleryImageId": "[variables('sigresourceid')]",
-                    "runOutputName": "[parameters('managedimagename')]",
+                    "runOutputName": "[parameters('sharedgalimagename')]",
                     "tags": {
                         "source": "azVmImageBuilder",
                         "releaseStatus": "staging",
@@ -88,7 +88,7 @@
                   {   "type":"managedImage",
                     "imageId": "[variables('mdiresourceid')]",
                     "location": "[parameters('destinationregion')]",
-                    "runOutputName": "[parameters('sharedgalimagename')]",
+                    "runOutputName": "[parameters('managedimagename')]",
                     "tags": {
                       "source": "azVmImageBuilder",
                       "releaseStatus": "staging",
