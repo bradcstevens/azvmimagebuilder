@@ -19,7 +19,6 @@ az resource create --resource-group <rgname> --properties @/.../templateName.jso
 ```
 
 ### How to create image artifact
-### How to create image artifact
 ```bash
 az resource invoke-action \
      --resource-group ibdemo \
