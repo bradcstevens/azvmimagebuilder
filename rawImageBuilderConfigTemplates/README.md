@@ -2,7 +2,7 @@
 these are examples of Azure VM Image Builder Template, you can use these when submitting an Image Template directly to the Azure Resource Provider, and they are also good for understanding basic templates.
 
 Format:
-<os_major_minor>_<source>_<number of customizations>_<distribution_target>
+'<os_major_minor>_<source>_<number of customizations>_<distribution_target>.json'
 
 * os_major_minor e.g. rhel73
 * source e.g. iso or mp (azure marketplace image)

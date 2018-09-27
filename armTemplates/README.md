@@ -6,7 +6,7 @@ There are two files required for creating the Image Template, deployment templat
 * rhel_iso_image_deploy_mdi.json - associated deployment template file
 
 Format:
-<source>_<template_type>_<distribution_target>.json
+'<source>_<template_type>_<distribution_target>.json'
 
 * source e.g. iso or azplatform (azure marketplace image (Ubuntu))
 * template_type e.g. deploy or params, deploy is the ARM deployment template, the params represents the parameter file, which you will need to apply your own settings.
