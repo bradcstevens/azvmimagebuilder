@@ -22,7 +22,7 @@ e.g.
 Once you have copied the parameters file locally and populated, note the Image Template Name, you will need this to invoke the image build.
 
 ```bash
-# template path must be the RAW git code!
+# template path must be the RAW git path!
 
 declare resourceGroupName=""
 declare deploymentName=""
