@@ -29,10 +29,10 @@
         "customizescriptpath": {
           "type": "string"
         },
-        "destinationresgroupid": {
+        "managedImageResGroupId": {
           "type": "string"
         },
-        "imagename": {
+        "managedimagename": {
           "type": "string"
         },
         "destinationregion": {
@@ -41,7 +41,7 @@
     },
     
     "variables": {
-      "resourceid": "[concat(parameters('destinationresgroupid'),parameters('imagename'))]"
+      "resourceid": "[concat(parameters('managedImageResGroupId'),parameters('imagename'))]"
     },
 
 
