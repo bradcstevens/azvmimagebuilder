@@ -41,7 +41,7 @@
     },
     
     "variables": {
-      "resourceid": "[concat(parameters('managedImageResGroupId'),parameters('imagename'))]"
+      "resourceid": "[concat(parameters('managedImageResGroupId'),parameters('managedimagename'))]"
     },
 
 
@@ -73,7 +73,7 @@
                     {   "type":"managedImage",
                         "imageId": "[variables('resourceid')]",
                         "location": "[parameters('destinationregion')]",
-                        "runOutputName": "[parameters('imagename')]",
+                        "runOutputName": "[parameters('managedimagename')]",
                         "tags": {
                             "source": "goimagebuilderarm",
                             "baseosimg": "ubuntu1804"
